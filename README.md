@@ -8,7 +8,7 @@ Usage
 -----
 
 ```sh
-$ docker run --rm -v `pwd`:`pwd` -w `pwd` grachev/php-cs-fixer --level=symfony fix ./src
+$ docker run --rm -v `pwd`:`pwd` -w `pwd` grachev/php-cs-fixer fix --rules=@Symfony ./src
 ``` 
 
 phpstorm external-tool setting
@@ -16,6 +16,6 @@ phpstorm external-tool setting
 
 Program: ```docker```
 
-Parameters: ```run --rm  -v $ProjectFileDir$:$ProjectFileDir$  -w $ProjectFileDir$  grachev/php-cs-fixer fix --rues=@Symfony  $FileRelativePath$ ```
+Parameters: ```run --rm  -v $ProjectFileDir$:$ProjectFileDir$  -w $ProjectFileDir$  grachev/php-cs-fixer fix --rules=@Symfony  $FileRelativePath$ ```
 
 Working directory: ```$ProjectFileDir$```
