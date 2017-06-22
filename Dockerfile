@@ -2,7 +2,7 @@ FROM php:alpine
 
 MAINTAINER Konstantin Grachev <me@grachevko.ru>
 
-ENV FIXER_VERSION v2.3.1
+ENV FIXER_VERSION v2.3.2
 
 RUN set -ex \
     && apk add --no-cache git \
